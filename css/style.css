@@ -1,0 +1,779 @@
+/* Strat My Frame WOrk */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box box-sizing: border-box;
+    list-style: none;
+    font-family: "Work Sans", sans-serif
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #3333335e;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #333;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+
+}
+
+body {
+    overflow-x: hidden
+}
+
+.fa-arrow-up {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 15px;
+    background-color: red;
+    cursor: pointer;
+    border-radius: 15px;
+    color: #fff
+}
+
+.text-center {
+    text-align: center
+}
+
+.clear {
+    clear: both
+}
+
+.float-left {
+    float: left
+}
+
+.float-right {
+    float: right
+}
+
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
+    display: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-style: italic
+}
+
+.container {
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+.h1 {
+    font-size: 2em
+}
+
+.responsive-image {
+    width: 100%
+}
+
+:root {
+    --transition: .4s ease-in-out
+}
+
+/* End My Frame WOrk */
+
+/* Start Header */
+header {
+    background: url("../images/barnimages.com-2.jpg") no-repeat top center;
+    -wbkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    min-height: 500px;
+    position: relative;
+    width: 100%;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: tahoma
+}
+
+@media(max-width:767px) {
+    .hidden-xs {
+        display: none !important
+    }
+
+    .paragraph {
+        text-align: center;
+        font-size: 15px !important;
+        color: black !important
+    }
+}
+
+@media(min-width:768px) and (max-width:991px) {
+
+    .container {
+        width: 750px
+    }
+
+    .visible-sm {
+        display: block !important
+    }
+
+    .hidden-sm {
+        display: none !important
+    }
+
+}
+
+@media(min-width:992px) and (max-width:1199px) {
+
+    .container {
+        width: 970px
+    }
+
+    .visible-md {
+        display: block !important
+    }
+
+    .hidden-md {
+        display: none !important
+    }
+}
+
+@media(min-width:1200px) {
+    .container {
+        width: 1170px
+    }
+
+    .visible-lg {
+        display: block !important
+    }
+
+    .hidden-lg {
+        display: none !important
+    }
+}
+
+header .over-lay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .9)
+}
+
+header .over-lay .fa-bars {
+    display: none !important;
+    position: absolute;
+    right: -7px;
+    top: -10px;
+    font-size: 25px;
+    padding: 10px;
+    cursor: pointer
+}
+
+@media(max-width:767px) {
+
+    header .over-lay .fa-bars {
+        display: block !important
+    }
+
+    header .over-lay ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #f6f6f6;
+        position: relative;
+        left: 600px;
+        top: 48px;
+        width: 200px;
+        transition: var(--transition);
+        border-radius: 6px;
+        border-top-right-radius: 0
+    }
+    
+    header .over-lay ul.active{left: -1px}
+
+    header .over-lay ul::before {
+        content: "";
+        position: absolute;
+        top: -24px;
+        left: 176px;
+        border-width: 12px;
+        border-style: solid;
+        border-color: transparent transparent #fff transparent;
+
+    }
+
+    header .over-lay ul li {
+        z-index: 1;
+        transition: var(--transition);
+        position: relative;
+        border-bottom: 1px solid #333;
+        width: 100%;
+        height: 100%
+    }
+
+    header .over-lay ul li:hover {
+        transition: var(--transition);
+        padding-left: 25px;
+        background-color: #fff
+    }
+
+    header .over-lay ul li:last-of-type {
+        border-bottom: none
+    }
+
+    header .over-lay ul li a::before {
+        display: none
+    }
+
+    header .over-lay .container > h1 {
+        margin-top: 43px;
+        margin-left: 23px;
+        color: red;
+        font-size: 23px
+    }
+}
+
+
+header .over-lay ul {
+    float: right;
+    margin-top: -12px
+}
+
+header .over-lay ul li {
+    display: inline-block;
+    margin: 5px
+}
+
+header .over-lay ul li a:hover {
+    color: green
+}
+
+header .over-lay ul li a:active {
+    transform: translateY(15px)
+}
+
+header .over-lay ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    display: block;
+    color: #333;
+    padding: 5px;
+    text-align: left;
+    transition: var(--transition);
+    position: relative;
+
+
+}
+
+@media(min-width:767px) {
+
+    header .over-lay ul li a {
+        color: #fff;
+        font-size: 20px
+    }
+
+    header .over-lay .container h1 {
+        margin-top: 150px;
+        font-size: 40px;
+        font-weight: normal
+    }
+}
+
+
+
+
+@media(max-width:420px) {
+    header .over-lay .container h1 {
+        font-size: 15px;
+        margin-top: 70px;
+        width: 100%;
+        margin-left: 0px
+    }
+}
+
+header .over-lay .container .plan {
+    border: 1px solid #fff;
+    font-size: 20px;
+    width: 49%;
+    float: left;
+    margin: 1px;
+    padding: 5px
+}
+
+@media(max-width:767px) {
+    header .container .over-lay .plan {
+        color: green;
+        float: none;
+        margin: 0 auto 15px;
+        font-size: 15px;
+        padding: 15px
+    }
+}
+
+@media(max-width:420px) {
+    header .over-lay .container .plan {
+        color: #fff;
+        font-size: 11px;
+        width: 100%;
+        padding: 15px
+    }
+}
+
+header .over-lay .order {
+    border: 1px solid #fff;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-right: 20px;
+    padding: 5px
+}
+
+@media(max-width:767px) {
+    .visible-xs {
+        display: block !important
+    }
+}
+
+/* End Header */
+
+/* Strat features */
+.features {
+    padding: 30px 0
+}
+
+.features .h1 {
+    font-size: 50px;
+    color: #555
+}
+
+.features .feat {
+    color: #555;
+    padding: 10px 2px 0 0;
+    margin-bottom: 30px
+}
+
+
+.features .feat h2 {
+    margin: 10px 0 5px
+}
+
+.features .feat p {
+    line-height: 1.6;
+
+}
+
+@media(max-width: 300px) {
+    .features .feat {
+        font-size: 10px;
+        color: red
+    }
+}
+
+@media(max-width: 767px) {
+    .features .feat {
+        width: 100%;
+        text-align: center
+    }
+
+    .features .feat:nth-of-type(even) {
+        background-color: #ddd
+    }
+
+}
+
+@media(min-width:768px) {
+    .features .feat:first-of-type {
+        width: 100%
+    }
+
+    .features .feat:not(:first-of-type) {
+        width: 50%
+    }
+
+}
+
+@media(min-width:991px) {
+    .features .feat {
+        width: 33.3333% !important
+    }
+}
+
+/* End features */
+
+/* Strat About-Us */
+.about {
+    background-color: #625d5d52;
+    padding: 30px 0
+}
+
+.about .h1 {
+    color: #555
+}
+
+.about .paragraph {
+    line-height: 1.5;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #848484
+}
+
+/* End About-Us */
+
+/*Strat our-works */
+.our-works .image {
+    border: 2px solid #fff
+}
+
+@media(max-width:767px) {
+    .our-works .image {
+        width: 100%
+    }
+}
+
+@media(min-width:768px) {
+    .our-works .image {
+        width: 50%
+    }
+}
+
+@media(min-width:992px) {
+    .our-works .image {
+        width: 33.3333%
+    }
+}
+
+@media(min-width:1200px) {
+    .our-works .image {
+        width: 25%
+    }
+}
+
+/*End our-works */
+
+/* Strat pricing-table*/
+.pricing-table {
+    background-color: #444;
+    color: #fff;
+    padding: 50px 0
+}
+
+.pricing-table .h1 {
+    margin: 0 0 20px;
+    font-size: 50px
+}
+
+.pricing-table .pricing-plan {
+    border: 1px solid #fff;
+    padding: 20px;
+    position: relative;
+}
+
+.pricing-table .pricing-plan h3 {
+    margin: 0 0 10px;
+    font-size: 20px
+}
+
+
+.pricing-table .pricing-plan .pricing {
+    display: inline-block;
+    margin: 0 0 10px;
+    font-size: 15px;
+    color: #bfbfbf
+}
+
+.pricing-table .pricing-plan ul {
+    line-height: 2;
+    font-size: 15px
+}
+
+@media(max-width:767px) {
+    .pricing-table .pricing-plan {
+        width: 100%;
+        margin-bottom: 10px
+    }
+}
+
+@media(min-width:768px) {
+    .pricing-table .pricing-plan {
+        width: 100%;
+        margin-bottom: 20px
+    }
+}
+
+@media(min-width:992px) {
+    .pricing-table .pricing-plan:not(:last-of-type) {
+        margin-right: 1%
+    }
+
+    .pricing-table .pricing-plan {
+        width: 31.66666%;
+        margin-bottom: 0
+    }
+
+    .pricing-table .plus {
+        left: 32.666666%
+    }
+
+    .pricing-table .premium {
+
+        right: 32.666666%
+    }
+}
+
+/* End pricing-table*/
+
+.they-say {
+    padding: 50px 0
+}
+
+.they-say .h1 {
+    font-size: 40px;
+    margin: 0 0 20px;
+    color: #777
+}
+
+.they-say .person-say {
+    background-color: #eee;
+    padding: 15px;
+    margin: 0 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px
+}
+
+/* Strat they-say */
+@media(max-width:400px) {
+    .they-say .person-say {
+        padding: 0;
+        font-size: 11px;
+        color: rebeccapurple
+    }
+
+    ;
+}
+
+
+@media(max-width:767px) {
+    .they-say .person-say:first-of-type h3 {
+        color: green;
+        float: none;
+        text-align: center
+    }
+
+    .they-say .person-say:first-of-type p {
+        float: none;
+        width: 100%
+    }
+
+    .they-say .person-say .avatar {
+        float: none;
+        margin: auto;
+    }
+
+    .they-say .person-say {
+        overflow: hidden
+    }
+
+    .they-say .person-say:not(:first-of-type) h3 {
+        float: none;
+        text-align: center
+    }
+
+    .they-say .person-say:not(:first-of-type) p {
+        float: none;
+        width: 100%
+    }
+
+}
+
+@media(min-width:768px) {
+    .they-say .person-say:first-of-type {
+        width: 100%
+    }
+
+    .they-say .person-say:not(:first-of-type) {
+        width: 49%
+    }
+
+    .they-say .person-say:last-of-type {
+        margin-left: 2%
+    }
+
+    .they-say .person-say:first-of-type h3 {
+        color: blue
+    }
+}
+
+@media(min-width:768px) and (max-width:991px) {
+
+    .they-say .person-say:not(:first-of-type) .avatar {
+        float: none;
+        margin: auto;
+    }
+
+    .they-say .person-say:not(:first-of-type) h3 {
+        float: none;
+        text-align: center
+    }
+
+    .they-say .person-say:not(:first-of-type) p {
+        float: none;
+        width: 100%
+    }
+}
+
+@media(min-width:992px) {
+    .they-say .person-say:first-of-type {
+        width: 50%;
+        margin-left: 25%
+    }
+
+    .they-say .person-say:first-of-type h3 {
+        color: red
+    }
+}
+
+.they-say .person-say .avatar {
+    width: 120px;
+}
+
+.they-say .person-say .avatar img {
+    border-radius: 20px;
+    transition-duration: 1s;
+    border: 2px solid #fff
+}
+
+.they-say .person-say .avatar img:hover {
+    transform: rotateY(180deg)
+}
+
+.they-say .person-say h3 {
+    margin-left: 20px
+}
+
+.they-say .person-say p {
+    width: calc(100% - 140px);
+    margin-left: 20px;
+    line-height: 1.3;
+    text-transform: capitalize;
+    font-size: 15px
+}
+
+.they-say .person-say .avatar {
+    width: 100px
+}
+
+/* End they-say*/
+
+/* Strat Information */
+.information {
+    background-color: #ececec;
+    padding: 30px 0
+}
+
+.information .h1 {
+    font-size: 40px;
+    color: #848484
+}
+
+.information .info-list li {
+    display: inline-block;
+    background-color: #ddd;
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer
+}
+
+.information .info-content > div {
+    padding: 15px;
+    background-color: #fff;
+    line-height: 1.7;
+}
+
+.information .info-content > div:not(:first-of-type) {
+    display: none
+}
+
+.information .info-list li.selected {
+    background-color: #fff;
+    color: green
+}
+
+@media(max-width: 767px) {
+    .information .info-list li {
+        display: block;
+        text-align: center
+    }
+}
+
+/* End Information */
+
+/* Start Footer */
+.footer {
+    background-color: #333;
+    color: #eee;
+    margin-top: 2px
+}
+
+.footer .copyright,
+.footer .design {
+    padding: 20px;
+    text-align: center;
+    text-transform: capitalize
+}
+
+.footer i {
+    color: red;
+    animation: Myheart 1s ease-in-out infinite
+}
+
+@keyframes Myheart {
+
+    0%,
+    100% {
+        transform: scale(.5)
+    }
+
+    50% {
+        transform: scale(1)
+    }
+}
+
+@media(max-width:767px) {
+
+    .footer .copyright,
+    .footer .design {
+        width: 100%
+    }
+}
+
+@media(min-width:768px) {
+
+    .footer .copyright,
+    .footer .design {
+        width: 50%
+    }
+}
+
+/* End Footer */
