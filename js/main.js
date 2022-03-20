@@ -1,12 +1,12 @@
 /* global $ */
 $(function () {
-     // Smoothly Scroll To Elment
+    // Smoothly Scroll To Elment
     $("header ul li a").click(function (e) {
 
         e.preventDefault()
-        
-         $("header ul").removeClass("active")
-        
+
+        $("header ul").removeClass("active")
+
         document.querySelector($(this).data("section")).scrollIntoView({
 
             behavior: "smooth"
@@ -16,7 +16,6 @@ $(function () {
     })
 
     //information about our companey
-    'use strict';
     $('.info-list li').click(function () {
         $(this).addClass('selected').siblings('li').removeClass('selected');
         $('.info-content div').hide();

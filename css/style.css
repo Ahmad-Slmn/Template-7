@@ -45,7 +45,8 @@ body {
     background-color: #333;
     cursor: pointer;
     border-radius: 15px;
-    color: #fff
+    color: #fff;
+    display: none
 }
 
 .text-center {
@@ -109,11 +110,28 @@ header {
     .hidden-xs {
         display: none !important
     }
+    
+    .h1{font-size: 20px !important}
 
     .paragraph {
         text-align: center;
-        font-size: 15px !important;
+        font-size: 15px;
         color: black !important
+    }
+    
+    .our-works{
+        
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: auto;
+        overflow: hidden
+    }
+    
+    .about{
+        
+        width: 93% !important;
+        margin: auto;
+        overflow: hidden
     }
 }
 
@@ -201,8 +219,10 @@ header .over-lay .fa-bars {
         border-radius: 6px;
         border-top-right-radius: 0
     }
-    
-    header .over-lay ul.active{left: -1px}
+
+    header .over-lay ul.active {
+        left: -1px
+    }
 
     header .over-lay ul::before {
         content: "";
@@ -226,7 +246,7 @@ header .over-lay .fa-bars {
 
     header .over-lay ul li:hover {
         transition: var(--transition);
-        padding-left: 25px;
+        padding-left: 8px;
         background-color: #fff
     }
 
@@ -262,7 +282,7 @@ header .over-lay ul li a:hover {
 }
 
 header .over-lay ul li a:active {
-    transform: translateY(15px)
+    transform: translateY(3px)
 }
 
 header .over-lay ul li a {
@@ -559,8 +579,14 @@ header .over-lay .order {
         font-size: 11px;
         color: rebeccapurple
     }
-
-    ;
+    
+    .about{
+        width: 91% !important
+    }
+    
+    p{
+        font-size: 10px !important
+    }
 }
 
 
