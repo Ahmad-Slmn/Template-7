@@ -40,12 +40,13 @@ body {
 .fa-arrow-up {
     position: fixed;
     bottom: 80px;
-    right: 50px;
+    right: 5px;
     padding: 15px;
     background-color: #333;
     cursor: pointer;
     border-radius: 15px;
     color: #fff;
+    z-index: 99;
     display: none
 }
 
@@ -246,7 +247,7 @@ header .over-lay .fa-bars {
 
     header .over-lay ul li:hover {
         transition: var(--transition);
-        padding-left: 8px;
+        padding-left: px;
         background-color: #fff
     }
 
