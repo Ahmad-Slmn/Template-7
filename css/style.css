@@ -73,7 +73,8 @@ body {
     display: none
 }
 
-.container, .about-container {
+.container,
+.about-container {
     margin: auto;
     padding-left: 15px;
     padding-right: 15px
@@ -115,7 +116,7 @@ header {
     .h1 {
         font-size: 20px !important
     }
-    
+
     h3 {
         font-size: 15px !important
     }
@@ -421,10 +422,10 @@ header .over-lay .order {
     .features .feat:not(:first-of-type) {
         width: 50%
     }
-    
-     .about-container{
+
+    .about-container {
         padding: 0;
-         margin: 0
+        margin: 0
     }
 
 }
@@ -574,7 +575,8 @@ header .over-lay .order {
     padding: 15px;
     margin: 0 0 15px;
     border: 1px solid #ddd;
-    border-radius: 10px
+    border-radius: 10px;
+    overflow: hidden
 }
 
 /* Strat they-say */
@@ -588,12 +590,13 @@ header .over-lay .order {
     .about {
         width: 91% !important
     }
-    
-    .pricing-table .pricing-plan ul{
+
+    .pricing-table .pricing-plan ul {
         font-size: 10px
     }
 
-    p, .footer {
+    p,
+    .footer {
         font-size: 10px !important
     }
 }
@@ -750,7 +753,7 @@ header .over-lay .order {
         display: block;
         text-align: center;
         font-size: 13px;
-        margin-bottom: 5px 
+        margin-bottom: 5px
     }
 }
 
