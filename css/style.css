@@ -439,7 +439,7 @@ header .over-lay .order {
 /* End features */
 
 /* Strat About-Us */
-.about {
+.about-container .about {
     background-color: #625d5d52;
     padding: 30px 0
 }
@@ -585,10 +585,6 @@ header .over-lay .order {
         padding: 0;
         font-size: 11px;
         color: rebeccapurple
-    }
-
-    .about {
-        width: 91% !important
     }
 
     .pricing-table .pricing-plan ul {
