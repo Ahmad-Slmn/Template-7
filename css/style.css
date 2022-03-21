@@ -111,25 +111,31 @@ header {
     .hidden-xs {
         display: none !important
     }
+
+    .h1 {
+        font-size: 20px !important
+    }
     
-    .h1{font-size: 20px !important}
+    h3 {
+        font-size: 15px !important
+    }
 
     .paragraph {
         text-align: center;
         font-size: 15px;
         color: black !important
     }
-    
-    .our-works{
-        
+
+    .our-works {
+
         padding-left: 15px;
         padding-right: 15px;
         margin: auto;
         overflow: hidden
     }
-    
-    .about{
-        
+
+    .about {
+
         width: 93% !important;
         margin: auto;
         overflow: hidden
@@ -187,7 +193,8 @@ header .over-lay {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .9)
+    background-color: rgba(0, 0, 0, .7);
+    overflow: hidden !important
 }
 
 header .over-lay .fa-bars {
@@ -262,7 +269,6 @@ header .over-lay .fa-bars {
     header .over-lay .container > h1 {
         margin-top: 43px;
         margin-left: 23px;
-        color: red;
         font-size: 23px
     }
 }
@@ -330,7 +336,7 @@ header .over-lay .container .plan {
     font-size: 20px;
     width: 49%;
     float: left;
-    margin: 1px;
+    margin: 3px 0;
     padding: 5px
 }
 
@@ -580,12 +586,16 @@ header .over-lay .order {
         font-size: 11px;
         color: rebeccapurple
     }
-    
-    .about{
+
+    .about {
         width: 91% !important
     }
     
-    p{
+    .pricing-table .pricing-plan ul{
+        font-size: 10px
+    }
+
+    p, .footer {
         font-size: 10px !important
     }
 }
@@ -740,7 +750,8 @@ header .over-lay .order {
 @media(max-width: 767px) {
     .information .info-list li {
         display: block;
-        text-align: center
+        text-align: center;
+        font-size: 13px
     }
 }
 
