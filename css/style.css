@@ -73,7 +73,7 @@ body {
     display: none
 }
 
-.container {
+.container, .about-container {
     margin: auto;
     padding-left: 15px;
     padding-right: 15px
@@ -130,13 +130,6 @@ header {
 
         padding-left: 15px;
         padding-right: 15px;
-        margin: auto;
-        overflow: hidden
-    }
-
-    .about {
-
-        width: 93% !important;
         margin: auto;
         overflow: hidden
     }
@@ -427,6 +420,11 @@ header .over-lay .order {
 
     .features .feat:not(:first-of-type) {
         width: 50%
+    }
+    
+     .about-container{
+        padding: 0;
+         margin: 0
     }
 
 }
@@ -751,7 +749,8 @@ header .over-lay .order {
     .information .info-list li {
         display: block;
         text-align: center;
-        font-size: 13px
+        font-size: 13px;
+        margin-bottom: 5px 
     }
 }
 
