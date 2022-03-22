@@ -603,6 +603,12 @@ header .over-lay .order {
         color: green;
         float: none;
         text-align: center
+        
+    }
+    
+    .they-say .person-say:first-of-type h3{
+        margin: auto
+       
     }
 
     .they-say .person-say:first-of-type p {
@@ -621,7 +627,8 @@ header .over-lay .order {
 
     .they-say .person-say:not(:first-of-type) h3 {
         float: none;
-        text-align: center
+        text-align: center;
+        margin: auto
     }
 
     .they-say .person-say:not(:first-of-type) p {
